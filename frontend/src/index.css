@@ -50,13 +50,13 @@ body {
   flex: 1;
 }
 
-.hero-subtitle {
+/* .hero-subtitle {
   color: #2f6f3e;
   font-weight: 600;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
+} */
 
 .hero h1 {
   font-size: 3rem;

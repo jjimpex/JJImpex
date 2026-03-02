@@ -58,7 +58,7 @@ const Footer = () => {
           toggleSection={toggleSection}
         >
           <p><b>Phone: </b> +91-9876543210</p>
-          <p><b>Email:</b> contact@jjimpex.com</p>
+          <p><b>Email:</b> jjimpex14.com</p>
           <p>
             <b>Address:</b> JJ Impex, B-74, Basement, Khasra No. 37/20, Suraj Park,
             Village Samaipur, Delhi

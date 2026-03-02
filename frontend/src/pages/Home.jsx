@@ -84,10 +84,10 @@ const Home = () => {
       <header className="hero section">
         <div className="container hero-wrapper">
           <div className="hero-content">
-            <span className="hero-subtitle">Premium Import Solutions</span>
-            <h1>Best Quality Products for Your Business</h1>
+            {/* <span className="hero-subtitle">Premium Food Grocery Solutions</span> */}
+            <h1>Premium Quality Products Food Products For Your Venture</h1>
             <p>
-              JJImpex delivers trusted international brands and premium-quality
+              JJ Impex delivers trusted international brands and premium-quality
               products to help your business grow faster and smarter.
             </p>
 
