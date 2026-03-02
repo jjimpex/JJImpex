@@ -40,7 +40,7 @@ const BrandFilter = ({
         {/* Input */}
         <input
           type="text"
-          placeholder="Search brands..."
+          placeholder="Start Typing..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="brand-search-input"
