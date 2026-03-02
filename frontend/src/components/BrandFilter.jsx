@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FiSearch, FiX, FiFilter } from "react-icons/fi";
+import { FiSearch, FiX, FiFilter, FiRefreshCcw } from "react-icons/fi";
 
 const BrandFilter = ({
   searchTerm,
@@ -14,10 +14,7 @@ const BrandFilter = ({
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setShowSort(false);
       }
     };
@@ -37,7 +34,6 @@ const BrandFilter = ({
   return (
     <div className="brand-filter-bar">
       <div className="search-wrapper" ref={dropdownRef}>
-        
         {/* Search Icon */}
         <FiSearch className="search-icon" />
 
@@ -52,10 +48,7 @@ const BrandFilter = ({
 
         {/* Clear Button */}
         {searchTerm && (
-          <FiX
-            className="clear-icon"
-            onClick={() => setSearchTerm("")}
-          />
+          <FiX className="clear-icon" onClick={() => setSearchTerm("")} />
         )}
 
         {/* Filter Icon */}
@@ -82,8 +75,11 @@ const BrandFilter = ({
       </div>
 
       {/* Reset Button */}
-      <button className="reset-btn" onClick={resetFilters}>
+      {/* <button className="reset-btn" onClick={resetFilters}>
         Reset
+      </button> */}
+      <button className="reset-btn icon-only" onClick={resetFilters}>
+        <FiRefreshCcw />
       </button>
     </div>
   );
