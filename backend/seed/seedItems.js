@@ -67,7 +67,8 @@ const itemsData = [
       { name: "Mojito Mint Syrup", description: "Mojito Mint Syrup", image: "monin-mojito-mint.png" },
       { name: "Strawberry Syrup", description: "Strawberry Syrup", image: "monin-strawberry-syrup.png" },
       { name: "Vanilla Syrup", description: "Vanilla Syrup", image: "monin-vanilla-syrup.png" },
-      { name: "Hazelnut Syrup", description: "Hazelnut Syrup", image: "monin-hazelnut-syrup.png" }
+      { name: "Hazelnut Syrup", description: "Hazelnut Syrup", image: "monin-hazelnut-syrup.png" },
+      { name: "Brown Butter Toffee Syrup", description: "Brown Butter Toffee Syrup", image: "monin-brown-butter-toffee-syrup.png" }
     ]
   },
   {
