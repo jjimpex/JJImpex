@@ -4,6 +4,7 @@ import ContactForm from "./ContactForm.jsx";
 import FeedbackForm from "./FeedbackForm.jsx";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import "../styles/footer.css";
 
 const AccordionSection = ({ id, title, active, toggleSection, children }) => {
   const contentRef = useRef(null);

@@ -1,0 +1,30 @@
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 15px;    
+  min-height: 190px;   
+  background: #ffffff;
+  border-radius: 20px;  
+  box-shadow: 0 12px 30px rgba(177, 23, 23, 0.06);
+  transition: 0.3s ease;
+  text-align: center;
+  margin: -5px;
+}
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.brand-card img {
+  height: 90px;      
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 25px;   
+}
+.brand-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: auto;
+  color: #2f6f3e;
+}

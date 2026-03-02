@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { isValidPhoneNumber } from "libphonenumber-js";
+import "../styles/contactAndFeedbackForm.css";
 
 const ContactForm = ({ close }) => {
   const [form, setForm] = useState({

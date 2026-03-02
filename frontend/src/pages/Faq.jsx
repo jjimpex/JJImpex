@@ -3,34 +3,34 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "../styles/faq.css";
 
 const faqs = [
   {
     question: "Do you deal in bulk orders?",
     answer:
-      "Yes, we specialize in bulk and wholesale distribution for retailers and distributors across India."
+      "Yes, we specialize in bulk and wholesale distribution for retailers and distributors across India.",
   },
   {
     question: "Which brands do you supply?",
     answer:
-      "We deal in premium FMCG and retail brands listed in our Collections section."
+      "We deal in premium FMCG and retail brands listed in our Collections section.",
   },
   {
     question: "What is the delivery timeline?",
     answer:
-      "Delivery typically takes 5–7 working days across India depending on location."
+      "Delivery typically takes 5–7 working days across India depending on location.",
   },
   {
     question: "How can I enquire about pricing?",
     answer:
-      "Click the Enquire button in the footer and our team will contact you shortly."
-  }
+      "Click the Enquire button in the footer and our team will contact you shortly.",
+  },
 ];
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // ✅ Scroll to top ONLY when FAQ page loads
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -53,9 +53,9 @@ const Faq = () => {
             name: item.question,
             acceptedAnswer: {
               "@type": "Answer",
-              text: item.answer
-            }
-          }))
+              text: item.answer,
+            },
+          })),
         })}
       </script>
 
@@ -88,33 +88,19 @@ const Faq = () => {
                   <FaChevronDown />
                 </motion.span>
               </div>
-
-              {/* <AnimatePresence>
+              <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
                     className="faq-answer"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ type: "spring", stiffness: 120 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
                     {item.answer}
                   </motion.div>
                 )}
-              </AnimatePresence> */}
-              <AnimatePresence>
-  {openIndex === index && (
-    <motion.div
-      className="faq-answer"
-      initial={{ height: 0, opacity: 0 }}
-      animate={{ height: "auto", opacity: 1 }}
-      exit={{ height: 0, opacity: 0 }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-    >
-      {item.answer}
-    </motion.div>
-  )}
-</AnimatePresence>
+              </AnimatePresence>
             </motion.div>
           ))}
         </div>

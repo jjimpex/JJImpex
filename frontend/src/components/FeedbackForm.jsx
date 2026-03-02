@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
+import "../styles/contactAndFeedbackForm.css";
 
 const FeedbackForm = ({ close }) => {
   const [form, setForm] = useState({

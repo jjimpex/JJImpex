@@ -1,0 +1,152 @@
+/* ================= ITEMS ================= */
+
+ .brand-items-header {
+  padding-top: 120px; 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brand-items-header h1 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #1f4d2e;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.items-list {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch; 
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 22px;
+
+  border-radius: 26px;
+
+  background: linear-gradient(145deg, #ffffff, #f2f5f3);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  height: 100%; 
+}
+
+/* Premium Hover Lift */
+.item-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.15),
+    0 0 35px rgba(47, 111, 62, 0.15);
+}
+
+.item-image-wrapper {
+  width: 100%;
+  height: 220px; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(240, 240, 240, 0.6)
+  );
+}
+
+/* Image */
+.item-image-wrapper img {
+  max-width: 80%;
+  max-height: 180px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.item-card:hover img {
+  transform: scale(1.08);
+}
+
+
+
+
+.item-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2f6f3e;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .items-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .item-image-wrapper {
+    height: 120px;
+  }
+
+  .item-image-wrapper img {
+    max-height: 110px;
+  }
+
+  .item-card {
+    padding: 20px 15px;
+  }
+
+  .item-card h3 {
+    font-size: 0.95rem;
+  }
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(
+    circle at center,
+    rgba(47, 111, 62, 0.3),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+
+
+/* FADE IN ANIMATION */
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .brand-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

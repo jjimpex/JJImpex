@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
+import '../styles/aboutUs.css';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -106,45 +107,6 @@ const AboutUs = () => {
               <p>Years Experience</p>
             </div>
           </div>
-
-          {/* OUR STRENGTHS */}
-          {/* <div className="stats-section">
-            <div className="stats-card">
-              <h2 className="section-title">Our Strengths</h2>
-
-              <div className="stats-grid">
-                <div className="stat-bar">
-                  <div className="stat-header">
-                    <span>Quality Assurance</span>
-                    <span>95%</span>
-                  </div>
-                  <div className="bar-bg">
-                    <div className="bar-fill" data-percentage="95"></div>
-                  </div>
-                </div>
-
-                <div className="stat-bar">
-                  <div className="stat-header">
-                    <span>Client Satisfaction</span>
-                    <span>98%</span>
-                  </div>
-                  <div className="bar-bg">
-                    <div className="bar-fill" data-percentage="98"></div>
-                  </div>
-                </div>
-
-                <div className="stat-bar">
-                  <div className="stat-header">
-                    <span>On-Time Delivery</span>
-                    <span>92%</span>
-                  </div>
-                  <div className="bar-bg">
-                    <div className="bar-fill" data-percentage="92"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           {/* OUR STRENGTHS */}
           <div className="stats-section">

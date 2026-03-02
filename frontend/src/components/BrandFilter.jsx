@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FiSearch, FiX, FiFilter, FiRefreshCcw } from "react-icons/fi";
+import "../styles/brandFilter.css";
 
 const BrandFilter = ({
   searchTerm,

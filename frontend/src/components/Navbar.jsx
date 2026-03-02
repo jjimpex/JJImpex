@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -126,13 +127,9 @@ const Navbar = () => {
         <li>
           <span onClick={() => scrollToSection("#")}>Home</span>
         </li>
-
-        {/* <li>
-          <span onClick={() => scrollToSection("#about")}>About Us</span>
-        </li> */}
         <li>
-  <Link to="/about">About Us</Link>
-</li>
+          <Link to="/about">About Us</Link>
+        </li>
 
         {/* PRODUCTS */}
         <li
@@ -140,15 +137,6 @@ const Navbar = () => {
           onMouseEnter={() => window.innerWidth > 992 && setProductsOpen(true)}
           onMouseLeave={() => window.innerWidth > 992 && setProductsOpen(false)}
         >
-          {/* <span
-            onClick={() => {
-              if (window.innerWidth <= 992) {
-                setProductsOpen(!productsOpen);
-              }
-            }}
-          >
-            Our Products ▾
-          </span> */}
           <span
             className="products-trigger"
             onClick={() => {
